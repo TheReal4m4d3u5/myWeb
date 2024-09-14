@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  background-color: DodgerBlue;
+
+  /* justify-content: flex-start;
+
+  align-items: baseline;
+  flex-wrap: nowrap; */
+  /*for align-content to work flex-wrap must be set to wrap*/
+  /*
+  align-content: baseline;
+  gap: 1em;
+*/
+
+}
+
+/* .item-1{
+    font-size: 100.5rem;
+} */
+
+/* .item-3{
+    flex-grow: 1;
+} */
+
+/* .item-3{
+    flex-shrink: 0;
+    flex-basis: 0;
+    flex: 1;
+    align-self: center;
+    order: -1;
+} */
+
+
+
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px; 
+  font-size: 30px; 
+}
+
+</style>
+</head>
+
+
+<body>
+
+<h1>Create a Flex Container</h1>
+
+<div class="flex-container">
+  <div>asdfasda</div>
+  <div></div>
+  <div>243434</div>
+  <div></div>
+
+</div>
+
+
+<p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+
+<p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+
+</body>
+</html>
